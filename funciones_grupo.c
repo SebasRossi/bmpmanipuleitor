@@ -29,7 +29,7 @@
 
 int solucion(int argc, char* argv[])
 {
-    ///DECLARACIONES Y PREARREGLOS
+    /// DECLARACIONES Y PREARREGLOS
 
     int ubicacion_nombre_archivo1 = 0, ubicacion_nombre_archivo2 = 0;
     int error;
@@ -56,13 +56,13 @@ int solucion(int argc, char* argv[])
 
 int buscar_nombre_archivo(int argc, char* argv[], int* ubic1, int* ubic2)
 {
-    ///DECLARACIONES
-    //Se declara una variable contador para contar nombres de archivo.
+    /// DECLARACIONES
+    // Se declara una variable contador para contar nombres de archivo.
     int contNombreArch = 0;
-    //Se declara una variable para la longitud del parametro.
+    // Se declara una variable para la longitud del parametro.
     int longitud;
 
-    ///CUERPO DEL ALGORITMO
+    /// CUERPO DEL ALGORITMO
     for (int i = 1; i < argc; i++)
     {
         longitud = strlen(argv[i]);
@@ -76,26 +76,26 @@ int buscar_nombre_archivo(int argc, char* argv[], int* ubic1, int* ubic2)
         }
     }
 
-    ///CIERRE DEL ALGORITMO
-    //Si no se cont� ning�n archivo '.bmp'
+    /// CIERRE DEL ALGORITMO
+    // Si no se conto ningun archivo '.bmp'
     if (contNombreArch == 0)
     {
-        //Devuelve ERROR
+        // Devuelve ERROR
         printf("%s", MENSAJE_APERTURA);
         return E_APERTURA;
     }
 
-    //Si se cont� m�s de dos archivos '.bmp'
+    // Si se conto mas de dos archivos '.bmp'
     else if (contNombreArch > 2)
     {
-        //Devuelve ERROR
+        // Devuelve ERROR
         printf("%s", MENSAJE_PARAMETRO);
         return E_PARAMETRO;
     }
 
 
-    //Si no ocurrio ninguna excepcion
+    // Si no ocurrio ninguna excepcion
     else
-        //El programa cierra correctamente
+        // El programa cierra correctamente
         return TODO_OK;
 }

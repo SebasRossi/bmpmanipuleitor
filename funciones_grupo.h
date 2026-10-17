@@ -1,7 +1,7 @@
 #ifndef FUNCIONES_GRUPO_H_INCLUDED
 #define FUNCIONES_GRUPO_H_INCLUDED
 
-///BIBLIOTECAS Y FUENTES REFERENCIADAS
+/// BIBLIOTECAS Y FUENTES REFERENCIADAS
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -10,7 +10,7 @@
 #include <time.h>
 #include <ctype.h>
 
-///CODIGOS DE ERROR
+/// CODIGOS DE ERROR
 #define TODO_OK 0
 #define E_APERTURA 1
 #define E_LECTURA 2
@@ -18,7 +18,7 @@
 #define E_PORCENTAJE 4
 #define E_PARAMETRO 5
 
-///MENSAJES DE ERROR
+/// MENSAJES DE ERROR
 #define MENSAJE_APERTURA    "Error en la apertura del archivo.\n"
 #define MENSAJE_LECTURA     "Error en la lectura del archivo.\n"
 #define MENSAJE_MEMORIA     "Error en la reserva de memoria.\n"
@@ -29,13 +29,13 @@
 int solucion(int argc, char* argv[]);
 
 
-///FUNCIONES DE SOPORTE
-//FUNCIONES GEN�RICAS
+/// FUNCIONES DE SOPORTE
+// FUNCIONES GENERICAS
 void** matrizCrear              (int x, int y, size_t tamElem);
 void matrizDestruir             (void** mat, int x);
 
 
-//FUNCIONES ESPECIFICAS
+// FUNCIONES ESPECIFICAS
 int buscar_nombre_archivo(int argc, char* argv[], int* ubic1, int* ubic2);
 
 
