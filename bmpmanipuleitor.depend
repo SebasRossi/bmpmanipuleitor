@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1792209702 source:/home/sebastian/Documents/bmpmanipuleitor/main.c
+	<stdio.h>
+	"funciones_grupo.h"
+
+1792210826 /home/sebastian/Documents/bmpmanipuleitor/funciones_grupo.h
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<memory.h>
+	<math.h>
+	<time.h>
+	<ctype.h>
+
